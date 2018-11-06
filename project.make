@@ -5,6 +5,7 @@ core = 7.x
 projects[drupal][type] = core
 projects[drupal][version] = 7.59
 projects[drupal][patch][] = "https://drupal.org/files/issues/install-redirect-on-empty-database-728702-36.patch"
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/drupal-undefined_function_drupal_get_path_alias-2842762-2-D7.patch"
 
 ; Drush make allows a default sub directory for all contributed projects.
 defaults[projects][subdir] = contrib
