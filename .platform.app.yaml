@@ -92,6 +92,10 @@ mounts:
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
+    # Build hooks are run after the Drupal application has been built.
+    build: |
+        # Include the registry rebuild tool.
+        drush dl registry_rebuild
     # We run deploy hook after your application has been deployed and started.
     deploy: |
         set -e
